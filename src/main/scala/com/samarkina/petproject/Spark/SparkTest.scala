@@ -1,5 +1,11 @@
 package com.samarkina.petproject.Spark
 
+import org.apache.spark._
+import org.apache.spark.streaming._
+import org.apache.spark.streaming.StreamingContext._
+import org.apache.log4j.Logger
+import org.apache.log4j.Level
+
 object SparkTest {
 
   def main(args: Array[String]): Unit = {
