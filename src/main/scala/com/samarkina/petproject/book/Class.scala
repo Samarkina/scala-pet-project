@@ -1,4 +1,4 @@
-package com.samarkina.petproject.Book
+package com.samarkina.petproject.book
 
 class Person(name: String, age: Int) {
   def description = name + "is" + age + "Years old"

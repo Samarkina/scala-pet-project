@@ -1,4 +1,4 @@
-package com.samarkina.petproject
+package com.samarkina.petproject.site
 
 object Skeleton {
 

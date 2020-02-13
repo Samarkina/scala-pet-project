@@ -1,4 +1,4 @@
-package com.samarkina.petproject.Spark
+package com.samarkina.petproject.spark
 
 import org.apache.spark._
 import org.apache.spark.streaming._

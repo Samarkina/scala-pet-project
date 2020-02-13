@@ -1,4 +1,4 @@
-package com.samarkina.petproject.Book
+package com.samarkina.petproject.book
 
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer

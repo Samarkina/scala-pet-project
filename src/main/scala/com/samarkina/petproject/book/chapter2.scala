@@ -1,4 +1,4 @@
-package com.samarkina.petproject.Book
+package com.samarkina.petproject.book
 
 object chapter2 {
   def main(args: Array[String]): Unit = {
