@@ -1,4 +1,4 @@
-name := "ScalaPetProject2"
+name := "scala-pet-project"
 
 version := "0.1"
 

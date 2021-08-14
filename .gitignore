@@ -41,4 +41,4 @@ docker/local-run/dags
 **/build0/
 **/build1/
 .DS_Store
-
+**/.gradle/
