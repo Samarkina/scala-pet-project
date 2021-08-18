@@ -1,5 +1,7 @@
 package com.samarkina.petproject.site
 
+import scala.collection.mutable.ListBuffer
+
 object second_attempt {
   def main(args: Array[String]): Unit = {
     println(last(List(1, 2, 3, 4)))
@@ -7,6 +9,9 @@ object second_attempt {
     println(k_symbol(2, List(1, 2, 3, 4)))
     println(find_length(List(1, 2, 3, 4)))
     println(reverse_list(List(1, 2, 3, 4)))
+    println(palindrome(List(1, 2, 3, 2, 1)))
+    println(flat(List(1, 2, List(1, 2), 2, 1)))
+    println(compress(List(1, 2, 3, 2, 2, 3, 4)))
 
   }
 
@@ -38,6 +43,30 @@ object second_attempt {
   def reverse_list(list: List[Int]): List[Int] = {
     val elem = list.reverse
     elem
+  }
+
+  // P6. Find out whether a list is a palindrome.
+  def palindrome(list: List[Int]): Boolean = {
+    list == list.reverse
+  }
+
+  // P7. Flatten a nested list structure.
+  def flat(list: List[Any]): List[Any] = {
+    list flatMap {
+      case ms: List[_] => flat(ms)
+      case e => List(e)
+    }
+  }
+
+  // P8. Eliminate consecutive duplicates of list elements.
+  def compress(list: List[Any]): List[Any] = {
+    val compressed_list: ListBuffer[Any] = ListBuffer[Any]()
+    list foreach { a =>
+      if (!(compressed_list.contains(a))) {
+        compressed_list += a
+      }
+    }
+    compressed_list.toList
   }
 
 }
