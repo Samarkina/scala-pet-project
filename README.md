@@ -1,0 +1,1 @@
+# Scala task from [site](http://aperiodic.net/phil/scala/s-99/)
